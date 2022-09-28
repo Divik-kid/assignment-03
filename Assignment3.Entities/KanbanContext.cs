@@ -1,6 +1,7 @@
 namespace Assignment3.Entities;
 
-public class KanbanContext : DbContext
+
+public class KanbanContext : DbContext, IDisposable
 {
     public KanbanContext(DbContextOptions<KanbanContext> options): base(options)
     {}
