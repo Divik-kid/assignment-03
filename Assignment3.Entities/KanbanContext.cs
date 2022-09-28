@@ -9,7 +9,7 @@ public class KanbanContext : DbContext
      public KanbanContext(DbContextOptions<KanbanContext> options): base(options)
     {}
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseNpgsql("Host=localhost;Database=assignment3db;Username=postgres;Password=c5");
+            => optionsBuilder.UseNpgsql("Host=localhost;Database=assignment3db;Username=postgres;Password=abc");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
 
